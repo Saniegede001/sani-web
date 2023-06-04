@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="registration.css">
+        <title>INT-ALSAN sign-up</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body> 
+        <h1>INT-ALSAN Community</h1>
+        <p>fill in the <span class="required">Required</span> Details</p>
+        <div class="form-div">
+            <form action="">
+              <FIeldset> 
+                <input type="text" placeholder="SURNAME" required>
+                <input type="text" placeholder="FIRST NAME" required>
+                <br> <br> <br>
+                <input  type="text" placeholder="PHONE"  required>
+                <input  type="email" placeholder="EMAIL" required>
+                <br> <br> <br>
+                <input type="password" placeholder="PASSWORD" required>
+                <input type="password" placeholder="CONFIRM PASSWORD" required>
+                
+              </FIeldset> 
+              <br>
+              <fieldset>
+                <input type="text" placeholder="GENDER" required>
+                <label class="dob" for="dob">D O B</label><input value="dob" id="dob" type="date">
+                
+               
+                <br> <br> <br>
+                <input type="text" placeholder="NATIONALITY" required>
+                <input type="text" placeholder="COUNTRY OF RESDIDENCE" required>
+                <br> <br> <br>
+                <br>
+                <span class="terms">INT-ALSAN Community does not accept the use of irony or abusive words or any form of 
+                violence to it's members.  An Attempt to any suspicious activity may lead to account
+                suspension or being banned.
+                </span>
+                <br> <br> <br>
+                <fieldset> 
+                 <input id="agree" value="agree" type="checkbox" required> 
+                 I agree to the terms and services
+                </fieldset>
+               
+                <input onclick="alert('submitted Successfully We will get back to you')" class="submit" type="submit" >
+                
+              </FIeldset>
+              
+            </form>
+        </div>
+         
+        <div class="a">
+          <a href="login.html">Already have an account</a>
+          <br> <br>
+          <a class="go-to" href="home.html">Go to home</a>
+        </div>
+       
+    </body>
+</html>

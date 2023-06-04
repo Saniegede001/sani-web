@@ -1,0 +1,112 @@
+body {
+    width: 80%;
+    margin: auto auto;
+    /*text-align: center;*/
+    justify-items: center;
+    background-color: rgb(240, 240, 193);
+}
+
+h1 {
+    border-radius: 100;
+    background-color: aqua;
+    padding: 8px;
+    text-align: center;
+}
+
+.form-div {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 450px;
+    background-color:rgb(250, 249, 249);
+    
+}
+
+input {
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.phone {
+    margin: auto auto;
+    width: auto;
+}
+
+.date {
+    margin-right: 20px;
+}
+
+fieldset {
+    border: none;
+    background-color: rgb(250, 249, 249);
+}
+
+span {
+    color: gray;
+}
+
+.submit {
+    float: right;
+    background-color: aqua;
+    border: none;
+    padding: 5px;
+
+}
+
+.submit:hover {
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+.submit:active {
+    background-color: rgb(191, 210, 228);
+}
+
+p {
+    margin: auto auto;
+    text-align: center;
+}
+
+.required {
+    color: red;
+    padding: 0px 4px;
+}
+
+.a {
+    text-align: center;
+    margin: 40px auto;
+    font-size: large; 
+   
+}
+
+a {
+    
+    color: blue;
+    text-decoration-line: unset;
+}
+
+a:hover {
+    color: rgb(110, 28, 177);
+}
+
+a:active {
+    text-decoration-line: underline;
+    color: red;
+}
+
+.dob {
+    color: gray;
+}
+
+.terms {
+    color: rgb(8, 98, 139);
+}
+
+.go-to {
+    color: rgb(231, 97, 164);
+    text-decoration-line: unset;
+    float: right;
+    margin-right: 255px;
+    font-size: larger;
+}

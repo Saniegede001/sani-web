@@ -1,0 +1,43 @@
+body {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(240, 240, 193);;
+    
+    
+}
+
+h1 {
+    text-align: center;
+    background-color: aqua;
+    width: auto auto;
+    /* border-radius: 100%; */
+    padding: 8px;
+}
+
+.intro-div {
+    padding:10px;
+    height: 330px;
+    background-color:rgb(250, 249, 249);
+}
+
+.sign {
+    margin: 22px 15px;
+    float: right;
+    background-color: aqua;
+    border: none;
+    height: 25px;
+}
+
+.sign a {
+    text-decoration-line: unset;
+}
+
+.sign:hover {
+    background-color: rgb(0, 233, 233);
+}
+
+.sign:active {
+    background-color: rgb(255, 255, 255);
+    
+}
