@@ -1,3 +1,14 @@
+@keyframes slide {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transformX: translateX(0px)
+    }
+}
+
+
 body {
     width: 80%;
     margin: auto auto;
@@ -7,19 +18,31 @@ body {
     background-color: rgb(240, 240, 193);
 }
 
-
 h1 {
     margin-top: 30px;
     color: rgb(87, 177, 147);
+
+
+    animation: slide 1s ease-in 0s 1 normal ;
+
 }
 
 .main-div {
     margin: 30px auto;
     width: 600px;
-    height: 300px;
+    height: 400px;
     background-color: rgb(250, 249, 249);
+    transition: all 1.5s;
     
 
+}
+
+input {
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    background-color: rgb(33, 241, 241);
+    transition: all 2s;
 }
 
 .login {
@@ -31,10 +54,12 @@ h1 {
     border: none;
     border-radius: 15px;
     cursor: pointer;
+    transition: all 1s;
 }
 
 .login:hover {
    background-color:  aquamarine;
+   transform: translateY(-5px)
 }
 
 .login:active {
@@ -45,19 +70,23 @@ a {
     float: left;
     text-decoration-line: unset;
     font-size: large;
+    transition: all 1s;
+    color: blueviolet;
+}
+
+a:hover {
+    color: rgb(39, 27, 49);
+    
+}
+
+a:active {
+    color: red;
 }
 
 button {
     background-color: aqua;
     border: none;
+    transition: all 0.9s;
+    
 }
 
-button:hover {
-    background-color: aquamarine;
-}
-
-button:active {
-    color: red;
-    background-color: antiquewhite;
-    transition: 0.3s;
-}
