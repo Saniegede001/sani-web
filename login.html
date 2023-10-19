@@ -1,32 +1,134 @@
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="login.css">
+  <head>
+    <title>INT-ALSAN LOGIN</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INT-ALSAN LOGIN</title>
-</head>
-<body>
-    <h1>INT-ALSAN &nbsp; Login</h1>
-    <div class="main-div">
-      <form action="">  
-        <br>
-        <br>
-       <span> Email: </span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-        <input type="email" placeholder="e.g member@gmail.com" required>
-        <br> 
-        <br>
-        <br>
-      <span> Password: </span> &nbsp; &nbsp; 
-       <input type="password" placeholder="&nbsp; &nbsp;
-        * * * * * * * * * " required>
-       <br> <br> <br>
-       <button onclick="alert('Please Wait ...')" class="login" type="submit">Login</button>
-      </form> 
-      <br> <br>
-      <br> <br>
-      <a href="home.html"> &nbsp; &nbsp; &nbsp; &nbsp; &#8592; Back to home </a>
-      <button><a href="registration.html">Create a new account</a></button>
-     </div>
-    </body>
+    <style>
+      @keyframes slide {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transformX: translateX(0px)
+    }
+}
+
+body {
+    width: 90%;
+    margin: auto auto;
+    background: linear-gradient(90deg, rgb(1, 40, 63),  rgb(19, 36, 51), rgb(13, 42, 104) );
+}
+
+.form-div {
+    height: 450px;
+    max-width: 450px;
+    background:  linear-gradient(900deg, rgb(65, 51, 97),  rgb(49, 67, 83), rgb(96, 91, 109) );
+    margin: 0px auto;
+    padding: 0px;
+    text-align: center;
+
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.home {
+    text-align: center;
+    margin-top: 4px;
+    padding: 4px;
+    border: none;
+    font-size:medium;
+    color: white;
+    background:  linear-gradient(90deg, rgb(17, 1, 48),  rgb(63, 104, 143), rgb(27, 1, 87) );
+    width: 20%;
+    cursor: pointer;
+    float: right;
+    animation: slide 2s 1;
+    
+}
+
+.home:hover {
+    color: white;
+    background:  linear-gradient(2deg, rgb(17, 1, 48),  rgb(63, 104, 143), rgb(27, 1, 87) );
+
+}
+
+.home:active {
+    color: white;
+    background:  linear-gradient(20deg, rgb(17, 1, 48),  rgb(63, 104, 143), rgb(27, 1, 87) );
+    font-style: italic;
+    font-size: larger  ;
+}
+
+input {
+    background-color: none;
+    color: black;
+    border: none;
+    margin: 20px ;
+    padding: 6px;
+    width: 90%;
+    
+}
+
+button {
+    text-align: center;
+    margin: 16px auto;
+    padding: 8px 18px;
+    border: none;
+    font-size:medium;
+    color: white;
+    background:  linear-gradient(900deg, rgb(17, 1, 48),  rgb(63, 104, 143), rgb(27, 1, 87) );
+    width: 95%;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    color: white;
+    background:  linear-gradient(2deg, rgb(17, 1, 48),  rgb(63, 104, 143), rgb(27, 1, 87) );
+    transition: all 2s;
+    font-style: italic;
+} 
+
+button:active {
+    background:  linear-gradient(20deg, rgb(17, 1, 48),  rgb(63, 104, 143), rgb(27, 1, 87) );
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-size: large;
+}
+
+a {
+    color: rgb(218, 221, 224);
+    background:  linear-gradient(2deg, rgb(17, 1, 48),  rgb(63, 104, 143), rgb(27, 1, 87) );
+    text-decoration-line: none;
+    font-size: larger;
+}
+
+a:hover {
+    color: rgb(147, 148, 228);
+}
+
+    </style>
+  </head>
+  <body>
+    <h2>INT-ALSAN Login Portal</h2>
+    <form class="form-div" action="">
+      <a  href="home.html" class="home" >Go to home</a>
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button onclick="alert('welcome')" type="submit" >Login</button>
+      <p>Don't have an account? &nbsp; &nbsp; <a href="registration.html">Sign up</a> </p>
+      <br>
+      <!-- <a href="home.html" class="home" >Go to home<a> -->
+      
+    </form>
+  </body>
 </html>
