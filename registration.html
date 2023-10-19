@@ -1,61 +1,200 @@
 <!doctype html>
 <html>
     <head>
-        <link rel="stylesheet" href="registration.css">
         <title>INT-ALSAN sign-up</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+          @keyframes slide {
+   from { 
+    transform:translateY(-300px)
+} 
+
+   to {
+    transformX:translateY(0px) ;
+   }
+}
+
+
+
+
+body {
+    width: 80%;
+    margin: auto auto;
+    font-size: large;
+    color: white;
+    background: linear-gradient(90deg, rgb(1, 40, 63),  rgb(19, 36, 51), rgb(13, 42, 104) );
+}
+
+h1 {
+    background:  linear-gradient(900deg, rgb(17, 1, 48),  rgb(63, 104, 143), rgb(27, 1, 87) );
+    color: rgb(214, 193, 193);
+    padding: 8px;
+    text-align: center;
+    max-width: 700px;
+    margin: auto auto;
+    animation: slide 0.8s ease-in 0s 1 normal;
+}
+
+form {
+    margin: auto auto;
+    height:fit-content;
+    background:  linear-gradient(900deg, rgb(65, 51, 97),  rgb(49, 67, 83), rgb(96, 91, 109) );
+    max-width: 700px;
+}
+
+
+input {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: none;
+    border-width: unset;
+    height: 32px;
+    width: 100%;
+    background-color: rgb(228, 223, 224);
+    border-radius: 10px;
+}
+
+.phone {
+    margin: auto auto;
+    width: auto;
+}
+
+
+fieldset {
+    border: none;
+
+}
+
+.submit {
+    width: 90%;
+    color: white;
+    font-size: large;
+    background:  linear-gradient(900deg, rgb(17, 1, 48),  rgb(63, 104, 143), rgb(27, 1, 87) );
+    border: none;
+    padding: 5px;
+    margin: auto auto;
+
+}
+
+.submit:hover {
+    background:  linear-gradient(90deg, rgb(17, 1, 48),  rgb(63, 104, 143), rgb(27, 1, 87) );
+    cursor: pointer;
+    
+}
+
+.submit:active {
+    font-size: x-large;
+}
+
+p {
+    margin: auto auto;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.required {
+    color: red;
+    padding: 0px 4px;
+}
+
+.a {
+    text-align: center;
+    margin: 10px auto;
+    font-size: large; 
+   
+}
+
+a {
+    
+    color: black;
+    text-decoration-line: unset;
+}
+
+a:hover {
+    color: rgb(51, 3, 88);
+}
+
+a:active {
+    text-decoration-line: underline;
+    color: red;
+}
+
+.dob {
+    color: gray;
+}
+
+.terms {
+    text-align: center;
+    color: rgb(190, 190, 196);
+}
+
+.agree {
+    color: rgb(3, 8, 75);
+}
+
+.go-to {
+    color: black;
+    text-decoration-line: unset;
+    font-size: larger;  
+}
+
+input[type=checkbox] {
+    vertical-align: middle;
+    position: relative;
+    bottom: -6px;
+    width: 13px;
+}
+        </style>
     </head>
     <body> 
         <h1>INT-ALSAN Community</h1>
-        <p>fill in the <span class="required">Required</span> Details</p>
-        <div class="form-div">
+        <p class="fill">fill in the <span class="required">Required</span> Details</p>
+        <br>
             <form action="">
               <FIeldset> 
-                <input type="text" placeholder="SURNAME" required>
-                <input type="text" placeholder="FIRST NAME" required>
-                <br> <br> <br>
-                <input  type="text" placeholder="PHONE"  required>
-                <input  type="email" placeholder="EMAIL" required>
-                <br> <br> <br>
-                <input type="password" placeholder="PASSWORD" required>
-                <input type="password" placeholder="CONFIRM PASSWORD" required>
-                
-              </FIeldset> 
-              <br>
-              <fieldset>
-                <input type="text" placeholder="GENDER" required>
-                <label class="dob" for="dob">D O B</label><input value="dob" id="dob" type="date">
-                
-               
-                <br> <br> <br>
-                <input type="text" placeholder="NATIONALITY" required>
-                <input type="text" placeholder="COUNTRY OF RESDIDENCE" required>
-                <br> <br> <br>
-                <br>
-                <span class="terms">INT-ALSAN Community does not accept the use of irony or abusive words or any form of 
-                violence to it's members.  An Attempt to any suspicious activity may lead to account
-                suspension or being banned.
-                </span>
-                <br> <br> <br>
-                <fieldset> 
-                 <input id="agree" value="agree" type="checkbox" required> 
-                 I agree to the terms and services
-                </fieldset>
-               
-                <input onclick="alert('submitted Successfully We will get back to you')" class="submit" type="submit" >
-                
+                <label>&nbsp;Full Name:
+                    <input type="text" placeholder="    Enter your full name" required>
+                </label>    
+                <label>&nbsp;Phone:
+                    <input  type="tel" placeholder="    Enter your phone number"  required>
+                </label>
+                <label>&nbsp;Email:
+                    <input  type="email" placeholder="    Enter a valid Email" required>
+                </label>
+                <label>&nbsp;New Password:
+                    <input type="password" placeholder="    Create a new password" required>
+                </label>
+                <label>&nbsp;Confirm Password:
+                    <input type="password" placeholder="    Confirm new password" required>
+                </label>
+                <label>&nbsp;Nationality:
+                    <input type="text" placeholder="    Enter your nationality" required>
+                </label>
               </FIeldset>
-              
+                
+                <fieldset class="terms">
+                  <p>INT-ALSAN Community does not accept the use of irony or abusive words or any form of 
+                        violence to it's members.  An Attempt to any suspicious activity may lead to account
+                        suspension or bann.
+                  </p>   
+                 <label class="agree"> <input type="checkbox" name="agree" required>
+                  I agree to the Terms and Conditions
+                </label>
+                <input class="submit" onclick="alert('submitted Successfully We will get back to you')" type="submit" >
+                </fieldset>
+                
+              <div class="a">
+                <a href="login.html">Already have an account</a>
+                <br> <br>
+                <a class="go-to" href="home.html">Go to home</a>
+                <br>
+                <br>
+              </div>
+             
             </form>
-        </div>
+        <br> <br> <br> <br> <br>
          
-        <div class="a">
-          <a href="login.html">Already have an account</a>
-          <br> <br>
-          <a class="go-to" href="home.html">Go to home</a>
-        </div>
-       
     </body>
 </html>
